@@ -39,9 +39,18 @@ public class BasketCtrl {
 	private final BasketRepository basketRepository;
 	private final BasketMapper basketMapper;
 
-
+	@Operation(summary = "Create a new basket")
+	@ApiResponses(value = {
+			@ApiResponse(responseCode = "200", description = "Create the basket",
+					content = { @Content(mediaType = "application/json",
+							schema = @Schema(implementation = BasketResponse.class)) }),
+			@ApiResponse(responseCode = "400", description = "Basket cannot be created",
+					content = @Content),
+			@ApiResponse(responseCode = "404", description = "Page not found",
+					content = @Content) })
 	@PostMapping ( HttpEndpoints.POST_SINGLE )
 	public ResponseEntity< BasketResponse > create( @RequestBody @Valid @NotNull BasketRequest request ) {
+
 
 		if ( ( request.getStore() == null && request.getId() == null ) &&
 				basketRepository.existsBySessionAndId( request.getSession(), request.getId() ) == Boolean.TRUE ) {

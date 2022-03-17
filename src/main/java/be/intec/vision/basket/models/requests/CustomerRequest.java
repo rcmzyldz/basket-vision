@@ -24,8 +24,8 @@ public class CustomerRequest {
 
 	public enum Type {
 		INDIVIDUAL, COMPANY
+	}
 
-	String id;
 
 	public enum Gender {
 		MALE,
