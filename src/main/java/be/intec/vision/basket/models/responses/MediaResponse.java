@@ -25,7 +25,7 @@ public class MediaResponse {
 
 
 
-	@MongoId
+
 	String id;
 
 	Type type;

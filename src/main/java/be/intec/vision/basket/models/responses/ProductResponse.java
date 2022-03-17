@@ -4,6 +4,7 @@ package be.intec.vision.basket.models.responses;
 import be.intec.vision.basket.models.documents.MediaDocument;
 import be.intec.vision.basket.models.documents.ProductDocument;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.mongodb.lang.NonNull;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -30,7 +31,7 @@ public class ProductResponse {
 	}
 
 
-	@MongoId
+
 	String id;
 
 	Type type;
@@ -46,7 +47,7 @@ public class ProductResponse {
 	Float quantity;
 
 	String currency ;
-
+	@NonNull
 	BigDecimal price;
 
 	BigDecimal tax;

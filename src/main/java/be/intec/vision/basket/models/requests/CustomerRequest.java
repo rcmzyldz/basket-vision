@@ -23,8 +23,8 @@ public class CustomerRequest {
 
 
 	public enum Type {
-		INDIVIDUAL, COMPANY
-	}
+		INDIVIDUAL, COMPANY}
+
 
 
 	public enum Gender {
@@ -37,7 +37,7 @@ public class CustomerRequest {
 	@MongoId
 	String id;
 
-Type type;
+	Type type;
 
 	String company;
 
@@ -59,7 +59,7 @@ Type type;
 
 	Set<ContactDocument> contacts = new HashSet<>();
 
-	Boolean active;
+
 
 
 }

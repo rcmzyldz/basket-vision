@@ -25,11 +25,9 @@ public class MediaRequest {
     }
 
 
-
     @MongoId
     String id;
     Type type=Type.PNG;
-
 
     String title;
 
@@ -40,11 +38,6 @@ public class MediaRequest {
     String height;
 
     String url;
-
-    Boolean isExternal;
-
-    Boolean active;
-
 
 
     public void setUrl(String url) {

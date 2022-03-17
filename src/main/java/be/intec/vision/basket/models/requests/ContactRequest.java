@@ -3,10 +3,7 @@ package be.intec.vision.basket.models.requests;
 
 import be.intec.vision.basket.models.responses.ContactResponse;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
@@ -33,16 +30,14 @@ public class ContactRequest {
 
 	Type type;
 
-
+	@NonNull
 	@Email
 	String email;
-
-	@Min ( 13 )
-	@Max ( 13 )
+	@NonNull
+	@Min(9)
+	@Max(15)
 	String phone;
 
-	String activation;
 
-	Boolean active;
 
 }

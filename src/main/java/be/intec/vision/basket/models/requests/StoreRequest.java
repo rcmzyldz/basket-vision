@@ -4,10 +4,7 @@ package be.intec.vision.basket.models.requests;
 import be.intec.vision.basket.models.documents.AddressDocument;
 import be.intec.vision.basket.models.documents.ContactDocument;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
@@ -22,7 +19,7 @@ public class StoreRequest {
 	@MongoId
 
 	String id;
-
+	@NonNull
 	String name;
 
 	String about;
@@ -31,6 +28,6 @@ public class StoreRequest {
 
 	AddressDocument address;
 
-	Boolean active;
+
 
 }

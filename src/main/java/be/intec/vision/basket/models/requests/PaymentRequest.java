@@ -52,6 +52,6 @@ public class PaymentRequest {
 
 	Boolean isPaid;
 
-	Boolean active;
+
 
 }

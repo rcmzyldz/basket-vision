@@ -4,7 +4,7 @@
     "title": "Mr.",
     "firstName": "John",
     "lastName": "Doe",
-    "gender": "MALE",
+
     "dateOfBirth": "1986-03-11",
     "tokens": [
       {
@@ -22,7 +22,7 @@
         "city": "Gent",
         "region": "Oost-Vlaanderen",
         "country": "Belgie",
-        "countryCode": "BE",
+
         "latitude": "12.843642374",
         "longitude": "4.63245273"
       }
@@ -50,7 +50,7 @@
       "city": "Gent",
       "region": "Oost-Vlaanderen",
       "country": "Belgie",
-      "countryCode": "BE",
+
       "latitude": "6.223642374",
       "longitude": "9.23245273"
     }
@@ -67,6 +67,7 @@
       "price": 12.50,
       "tax": 1.15,
       "discount": 0,
+      "deliveryCost": 0,
       "medias": [
         {
           "title": "Pizza margherita",

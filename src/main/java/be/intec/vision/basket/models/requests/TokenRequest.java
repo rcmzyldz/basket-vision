@@ -29,7 +29,7 @@ public class TokenRequest {
 	@FutureOrPresent
 	LocalDateTime updatedAt;
 
-	Boolean active;
+
 
 
 }

@@ -1,14 +1,13 @@
 package be.intec.vision.basket.models.documents;
 
 
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import com.mongodb.lang.NonNull;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
+import javax.validation.constraints.Min;
 import java.math.BigDecimal;
 import java.util.HashSet;
 import java.util.Objects;
@@ -42,17 +41,15 @@ public class ProductDocument {
     Float quantity=1.0f;
 
     String currency = "EUR";
-
+    @NonNull
     BigDecimal price;
-
-
 
     BigDecimal discount=BigDecimal.ZERO;
 
 	BigDecimal deliveryCost=BigDecimal.ZERO;
 
 
-
+  BigDecimal tax=BigDecimal.ZERO;
 
 
     Set<MediaDocument> medias = new HashSet<>();

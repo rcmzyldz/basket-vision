@@ -27,9 +27,6 @@ import java.util.Set;
 public class BasketRequest {
 
 
-	
-
-
 	public enum Type {
 		SHOPPING_CART,
 		WISH_LIST

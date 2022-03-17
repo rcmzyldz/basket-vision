@@ -9,6 +9,7 @@ import lombok.experimental.FieldDefaults;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
+import javax.validation.constraints.FutureOrPresent;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -24,8 +25,10 @@ public class TokenDocument {
 	@NonNull
 	String hashValue;
 
+	@FutureOrPresent
 	LocalDateTime createdAt;
 
+	@FutureOrPresent
 	LocalDateTime updatedAt;
 
 	Boolean active = Boolean.TRUE;

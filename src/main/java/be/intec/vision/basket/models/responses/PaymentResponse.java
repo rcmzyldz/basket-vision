@@ -43,7 +43,7 @@ public class PaymentResponse {
 	}
 
 
-	@MongoId
+
 	String id;
 
 	Type type;

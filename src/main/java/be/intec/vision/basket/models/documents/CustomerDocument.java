@@ -38,10 +38,8 @@ public class CustomerDocument {
     @NonNull
     String firstName;
 
-
     @NonNull
     String lastName;
-
 
     LocalDate dateOfBirth;
 

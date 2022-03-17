@@ -3,10 +3,7 @@ package be.intec.vision.basket.models.requests;
 
 import be.intec.vision.basket.models.responses.AddressResponse;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 import org.springframework.lang.Nullable;
@@ -30,31 +27,22 @@ public class AddressRequest {
 
 	Type type;
 
-	
-
 	String doorNo;
-
+	@NonNull
 	String buildingNo;
-
+	@NonNull
 	String street;
 
 	String municipality;
-
+	@NonNull
 	String postCode;
-
+	@NonNull
 	String city;
 
 	String region;
-
+	@NonNull
 	String country;
 
-	String countryCode;
 
-	String latitude;
-
-	String longitude;
-	String activation;
-
-	Boolean active;
 
 }

@@ -31,7 +31,7 @@ public class BasketResponse {
 	}
 
 
-	@MongoId
+
 	String id;
 
 	Type type;

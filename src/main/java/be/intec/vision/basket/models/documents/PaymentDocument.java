@@ -23,7 +23,6 @@ public class PaymentDocument {
 		DEBIT_CARD,
 		PREPAID_CARD,
 		PAYPAL,
-
 		PAYPAL_GUEST_CHECKOUT,
 		AMAZON_PAY,
 		BANK_TRANSFER,
@@ -38,8 +37,6 @@ public class PaymentDocument {
 		UNION_PAY,
 		QIWI,
 		SKRILL
-
-
 
 	}
 

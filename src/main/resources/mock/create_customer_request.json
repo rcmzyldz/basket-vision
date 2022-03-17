@@ -1,0 +1,33 @@
+{
+  "title": "Mr.",
+  "firstName": "Chris",
+  "lastName": "Doe",
+  "dateOfBirth": "1986-03-11",
+  "tokens": [
+    {
+      "hashValue": "1234567890qwertyuıop"
+    }
+  ],
+  "activation": "bg98ge7nrgert84vrun42rv23uov2n3pr2",
+  "addresses": [
+    {
+      "doorNo": "5",
+      "buildingNo": "18",
+      "street": "Langestraat",
+      "municipality": "Wilsele",
+      "postCode": "3012",
+      "city": "Leuven",
+      "region": "Oost-Vlaanderen",
+      "country": "Belgie",
+
+      "latitude": "12.843642374",
+      "longitude": "4.63245273"
+    }
+  ],
+  "contacts": [
+    {
+      "email": "chris@gmail.com",
+      "phone": "0466128866"
+    }
+  ]
+}

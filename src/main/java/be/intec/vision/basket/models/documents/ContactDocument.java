@@ -4,10 +4,15 @@ package be.intec.vision.basket.models.documents;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -26,12 +31,15 @@ public class ContactDocument {
     @MongoId
     String id;
 
-    Type type=Type.ALL;
-
+    Type type = Type.ALL;
+    @NonNull
+    @Email
     String email;
-
+    @NonNull
+    @Min(9)
+    @Max(15)
     String phone;
-    String activation= UUID.randomUUID().toString();
+    String activation = UUID.randomUUID().toString();
 
     Boolean active = Boolean.TRUE;
 

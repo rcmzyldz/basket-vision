@@ -4,6 +4,7 @@ package be.intec.vision.basket.models.responses;
 import be.intec.vision.basket.models.documents.AddressDocument;
 import be.intec.vision.basket.models.documents.ContactDocument;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.mongodb.lang.NonNull;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -19,17 +20,10 @@ import org.springframework.data.mongodb.core.mapping.MongoId;
 public class StoreResponse {
 
 
-	public enum Type {
-		ONLINE,
-		PHYSICAL,
-		ON_DEMAND
-	}
-@MongoId
+
 	String id;
 
-	Type type;
-
-
+		@NonNull
 	String name;
 
 	String about;

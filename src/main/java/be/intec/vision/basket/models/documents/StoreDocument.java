@@ -1,6 +1,7 @@
 package be.intec.vision.basket.models.documents;
 
 
+import com.mongodb.lang.NonNull;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,15 +18,12 @@ import java.util.Objects;
 public class StoreDocument {
 
 
-
 	@MongoId
 	String id;
-
-
+	@NonNull
 	String name;
 
 	String about;
-
 
 	ContactDocument contact;
 
