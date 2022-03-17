@@ -26,4 +26,7 @@ public class HttpEndpoints {
     public static final String GET_BY_SESSION_AND_STORE = "get/by-session-and-store";
     public static final String GET_BY_SESSION = "get/by-session";
     public static final String GET_ALL_BY_SESSION = "get/all/by-session";
+    public static final String PUT_SESSION_BY_BASKET_ID = "edit/session/by-basket-id/";
+
+
 }

@@ -39,9 +39,10 @@ public class BasketCtrl {
 	private final BasketRepository basketRepository;
 	private final BasketMapper basketMapper;
 
+
 	@Operation(summary = "Create a new basket")
 	@ApiResponses(value = {
-			@ApiResponse(responseCode = "200", description = "Create the basket",
+			@ApiResponse(responseCode = "201", description = "Create the basket",
 					content = { @Content(mediaType = "application/json",
 							schema = @Schema(implementation = BasketResponse.class)) }),
 			@ApiResponse(responseCode = "400", description = "Basket cannot be created",
@@ -78,7 +79,7 @@ public class BasketCtrl {
 	}
 
 
-	@PutMapping ( HttpEndpoints.PATCH_SINGLE_BY_ID )
+	@PutMapping ( HttpEndpoints.PUT_SESSION_BY_BASKET_ID )
 	public ResponseEntity< BasketResponse > updateSessionByBasketId( @RequestParam ( "basketId" ) @NotNull String basketId,
 	                                                                 @RequestParam ( "session" ) @NotNull String session ) {
 
